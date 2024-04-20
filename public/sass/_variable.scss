@@ -1,0 +1,121 @@
+// color variable
+
+$color_primary_green: #4e7c58;
+$color_secondary_green: #8abc8b;
+$color_gray: #444444;
+$color_light: #eaede6;
+$color_white: #ffffff;
+
+// color_bg
+@mixin color_bg_light {
+    background-color: $color_light;
+}
+
+@mixin color_bg_gray {
+    background-color: $color_gray;
+}
+
+@mixin color_bg_green {
+    background-color: $color_secondary_green;
+}
+
+// color_text
+@mixin color_text_green {
+    color: $color_primary_green;
+}
+
+@mixin color_text_gray {
+    color: $color_gray;
+}
+
+// text variable
+@font-face {
+    font-family: "BT Beau Sans", sans-serif;
+    src: url("/public/assets/fonts/BT-BeauSans-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BT Beau Sans", sans-serif;
+    src: url("public/assets/fonts/BT-BeauSans-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BT Beau Sans", sans-serif;
+    src: url("public/assets/fonts/BT-BeauSans-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BT Beau Sans", sans-serif;
+    src: url("public/assets/fonts/BT-BeauSans-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BT Beau Sans", sans-serif;
+    src: url("public/assets/fonts/BT-BeauSans-ExtraBold.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+
+$fontFam: "Poppins", sans-serif;
+
+@mixin fontFam {
+    font-family: $fontFam;
+}
+
+@mixin fontNor {
+    font-style: normal;
+}
+
+@mixin fontIta {
+    font-style: italic;
+}
+
+// font weight
+@mixin fontLi {
+    font-weight: 300;
+}
+
+@mixin fontRe {
+    font-weight: 400;
+}
+
+@mixin fontMd {
+    font-weight: 500;
+}
+
+@mixin fontBold {
+    font-weight: 700;
+}
+
+@mixin fontExtraBold {
+    font-weight: 900;
+}
+
+// mobile width
+$res_width_lg: 1024px;
+$res_width_md: 768px;
+$res_width_sm: 480px;
+
+@mixin res_width_lg {
+    @media screen and (max-width: #{$res_width_lg}) {
+        @content;
+    }
+}
+@mixin res_width_md {
+    @media screen and (max-width: #{$res_width_md}) {
+        @content;
+    }
+}
+@mixin res_width_sm {
+    @media screen and (max-width: #{$res_width_sm}) {
+        @content;
+    }
+}
