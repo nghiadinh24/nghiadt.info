@@ -24,7 +24,16 @@
 .text_42_md {
     @include text_42_md();
 }
-
+@mixin text_32_md {
+    @include fontFam;
+    @include fontNor;
+    @include fontMd;
+    font-size: 32px;
+    line-height: 48px;
+}
+.text_32_md {
+    @include text_32_md();
+}
 @mixin text_24_md {
     @include fontFam;
     @include fontNor;
@@ -66,7 +75,7 @@
 }
 @mixin nav_btn {
     color: $color_gray;
-    font-size: 24px;
+    font-size: 32px;
     padding: 8px;
     display: flex;
     justify-content: center;
@@ -83,6 +92,33 @@
     }
 }
 // hero title
+@mixin hero_section {
+    @include res_width_md {
+        justify-content: center;
+        align-content: center;
+        padding: 0px 24px 0px 24px;
+        height: 100vh;
+    }
+    @include res_width_sm {
+        height: 100vh;
+    }
+}
+.hero_section {
+    @include hero_section();
+}
+@mixin hero_heading_title {
+    @include res_width_sm {
+        padding: 0px 24px 0px 24px;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+}
+.hero_heading_title {
+    @include hero_heading_title();
+}
 @mixin hero_title {
     @include fontFam;
     @include fontBold;
@@ -104,8 +140,8 @@
         line-height: 72px;
     }
     @include res_width_sm {
-        font-size: 40px;
-        line-height: 48px;
+        font-size: 48px;
+        line-height: 64px;
     }
 }
 
@@ -140,9 +176,41 @@
     line-height: 40px;
     transform: translateY(60px);
     opacity: 0;
+    @include res_width_sm {
+        font-size: 16px;
+        line-height: 28px;
+    }
 }
 .hero_p {
     @include hero_p();
+}
+@mixin hero_heading_p {
+    @include res_width_md {
+        width: 80%;
+    }
+    @include res_width_sm {
+        width: 90%;
+    }
+}
+.hero_heading_p {
+    @include hero_heading_p();
+}
+@mixin hero_round {
+    @include res_width_lg {
+        width: 600px;
+        height: 600px;
+    }
+    @include res_width_md {
+        width: 400px;
+        height: 400px;
+    }
+    @include res_width_sm {
+        width: 300px;
+        height: 300px;
+    }
+}
+.hero_round {
+    @include hero_round();
 }
 
 // about_section
@@ -155,9 +223,71 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include res_width_md {
+        display: none;
+    }
+    @include res_width_sm {
+        display: none;
+    }
 }
 .about_section {
     @include about_section();
+}
+@mixin about_section_mb {
+    display: none;
+    @include res_width_md {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    @include res_width_sm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
+.about_section_mb {
+    @include about_section_mb();
+}
+@mixin about_container {
+    @include res_width_md {
+        padding: 0px 24px 0px 24px;
+    }
+    @include res_width_sm {
+        padding: 0px 16px 0px 16px;
+    }
+}
+.about_section_mb_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 42px;
+}
+.about_container {
+    @include about_container();
+}
+.about_mb_skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+.about_mb_skill_title {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+@mixin about_skill_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-content: center;
+}
+.about_skill_wrap {
+    @include about_skill_wrap();
 }
 @mixin about_btn {
     border-radius: 100px;
@@ -173,6 +303,14 @@
 .about_btn {
     @include about_btn();
 }
+@mixin about_section_mb_title {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 24px 0px 24px;
+}
+.about_section_mb_title {
+    @include about_section_mb_title();
+}
 @mixin about_text {
     @include color_text_gray;
     @include fontFam;
@@ -180,6 +318,15 @@
     @include fontRe;
     font-size: 24px;
     line-height: 48px;
+    @include res_width_md {
+        font-size: 18px;
+        line-height: 34px;
+    }
+    @include res_width_sm {
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+    }
 }
 .about_text {
     @include about_text();

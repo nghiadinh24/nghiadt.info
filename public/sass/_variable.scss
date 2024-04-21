@@ -100,9 +100,9 @@ $fontFam: "Poppins", sans-serif;
 }
 
 // mobile width
-$res_width_lg: 1024px;
+$res_width_lg: 992px;
 $res_width_md: 768px;
-$res_width_sm: 480px;
+$res_width_sm: 576px;
 
 @mixin res_width_lg {
     @media screen and (max-width: #{$res_width_lg}) {
