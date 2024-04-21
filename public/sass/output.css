@@ -4,35 +4,30 @@
   font-weight: 300;
   font-style: normal;
 }
-
 @font-face {
   font-family: "BT Beau Sans", sans-serif;
   src: url("public/assets/fonts/BT-BeauSans-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: "BT Beau Sans", sans-serif;
   src: url("public/assets/fonts/BT-BeauSans-Medium.ttf");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
   font-family: "BT Beau Sans", sans-serif;
   src: url("public/assets/fonts/BT-BeauSans-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
-
 @font-face {
   font-family: "BT Beau Sans", sans-serif;
   src: url("public/assets/fonts/BT-BeauSans-ExtraBold.ttf");
   font-weight: 900;
   font-style: normal;
 }
-
 .text_16_regular {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -83,13 +78,11 @@
   align-items: center;
   gap: 32px;
 }
-
 @media screen and (max-width: 768px) {
   .nav_items {
     display: none;
   }
 }
-
 @media screen and (max-width: 576px) {
   .nav_items {
     display: none;
@@ -105,13 +98,11 @@
   align-items: center;
   display: none;
 }
-
 @media screen and (max-width: 768px) {
   .nav_btn {
     display: flex;
   }
 }
-
 @media screen and (max-width: 576px) {
   .nav_btn {
     display: flex;
@@ -126,7 +117,6 @@
     height: 100vh;
   }
 }
-
 @media screen and (max-width: 576px) {
   .hero_section {
     height: 100vh;
@@ -154,21 +144,18 @@
   opacity: 0;
   transform: translateY(60px);
 }
-
 @media screen and (max-width: 992px) {
   .hero_title {
     font-size: 98px;
     line-height: 106px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .hero_title {
     font-size: 64px;
     line-height: 72px;
   }
 }
-
 @media screen and (max-width: 576px) {
   .hero_title {
     font-size: 48px;
@@ -184,21 +171,18 @@
   font-size: 90px;
   line-height: 98px;
 }
-
 @media screen and (max-width: 992px) {
   .hero_sub {
     font-size: 80px;
     line-height: 88px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .hero_sub {
     font-size: 58px;
     line-height: 66px;
   }
 }
-
 @media screen and (max-width: 576px) {
   .hero_sub {
     font-size: 32px;
@@ -215,7 +199,6 @@
   transform: translateY(60px);
   opacity: 0;
 }
-
 @media screen and (max-width: 576px) {
   .hero_p {
     font-size: 16px;
@@ -228,7 +211,6 @@
     width: 80%;
   }
 }
-
 @media screen and (max-width: 576px) {
   .hero_heading_p {
     width: 90%;
@@ -241,14 +223,12 @@
     height: 600px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .hero_round {
     width: 400px;
     height: 400px;
   }
 }
-
 @media screen and (max-width: 576px) {
   .hero_round {
     width: 300px;
@@ -265,13 +245,11 @@
   justify-content: center;
   align-items: center;
 }
-
 @media screen and (max-width: 768px) {
   .about_section {
     display: none;
   }
 }
-
 @media screen and (max-width: 576px) {
   .about_section {
     display: none;
@@ -281,7 +259,6 @@
 .about_section_mb {
   display: none;
 }
-
 @media screen and (max-width: 768px) {
   .about_section_mb {
     display: flex;
@@ -290,7 +267,6 @@
     align-content: center;
   }
 }
-
 @media screen and (max-width: 576px) {
   .about_section_mb {
     display: flex;
@@ -312,7 +288,6 @@
     padding: 0px 24px 0px 24px;
   }
 }
-
 @media screen and (max-width: 576px) {
   .about_container {
     padding: 0px 16px 0px 16px;
@@ -367,14 +342,12 @@
   font-size: 24px;
   line-height: 48px;
 }
-
 @media screen and (max-width: 768px) {
   .about_text {
     font-size: 18px;
     line-height: 34px;
   }
 }
-
 @media screen and (max-width: 576px) {
   .about_text {
     font-size: 16px;
@@ -391,6 +364,58 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .works_section {
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
+@media screen and (max-width: 576px) {
+  .works_section {
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .works_container {
+    padding: 0px 16px 0px 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .works_title {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .works_grid {
+    gap: 16px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .works_card {
+    padding: 0px 8px 0px 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .works_title_text {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .works_title_text {
+    font-size: 24px;
+    line-height: 40px;
+  }
 }
 
 .works_btn {
@@ -414,6 +439,12 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 576px) {
+  .contact_title {
+    width: 90%;
+  }
+}
+
 .contact_title_text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -421,6 +452,12 @@
   font-size: 64px;
   line-height: 72px;
   color: #444444;
+}
+@media screen and (max-width: 576px) {
+  .contact_title_text {
+    font-size: 42px;
+    line-height: 58px;
+  }
 }
 
 .contact_btn {
@@ -464,4 +501,12 @@
   color: #444444;
 }
 
-/*# sourceMappingURL=output.css.map */
+@media screen and (max-width: 576px) {
+  .footer_row {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    text-align: center;
+  }
+}/*# sourceMappingURL=output.css.map */

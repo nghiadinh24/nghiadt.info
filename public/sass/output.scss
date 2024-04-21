@@ -341,9 +341,48 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    @include res_width_md {
+        height: max-content;
+    }
+    @include res_width_sm {
+        height: max-content;
+    }
 }
 .works_section {
     @include works_section();
+}
+.works_container {
+    @include res_width_sm {
+        padding: 0px 16px 0px 16px;
+    }
+}
+.works_title {
+    @include res_width_sm {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+.works_grid {
+    @include res_width_sm {
+        gap: 16px;
+        width: 100%;
+    }
+}
+.works_card {
+    @include res_width_sm {
+        padding: 0px 8px 0px 8px;
+    }
+}
+.works_title_text {
+    @include res_width_md {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    @include res_width_sm {
+        font-size: 24px;
+        line-height: 40px;
+    }
 }
 @mixin works_btn {
     border-radius: 100px;
@@ -370,6 +409,11 @@
 .contact_section {
     @include contact_section();
 }
+.contact_title {
+    @include res_width_sm {
+        width: 90%;
+    }
+}
 @mixin contact_title_text {
     @include fontFam;
     @include fontNor;
@@ -377,6 +421,10 @@
     font-size: 64px;
     line-height: 72px;
     @include color_text_gray;
+    @include res_width_sm {
+        font-size: 42px;
+        line-height: 58px;
+    }
 }
 .contact_title_text {
     @include contact_title_text();
@@ -429,4 +477,13 @@
 }
 .footer_text {
     @include footer_text();
+}
+.footer_row {
+    @include res_width_sm {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+        text-align: center;
+    }
 }
