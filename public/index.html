@@ -14,318 +14,152 @@
       <!-- plugins css -->
     <link rel="stylesheet" href="./css/plugins/bootstrap-grid.css">
     <!-- custom css -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./sass/output.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./sass/style.css">
 </head>
-<body class="color_bg_black">
-
-    <!-- preloader -->
-    <div class="preloader">
-        <div class="text-container">
-          <h1 class="preloader_text">nghiadt</h1>
-          <h1 class="preloader_text">.info</h1>
-          <h1 class="preloader_text"></h1>
-        </div>
-      </div>
-    <!-- end-preloader -->
-    <!-- nav -->
-
-    <div class="main_nav">
-      <div class="navbar container-md">
+<body>
+    <!-- header -->
+    <header class="main_nav">
+      <div class="nav_container container">
         <a href="#" class="nav_brand">
           <img src="./assets/logo.svg" alt="">
         </a>
-        <div class="nav_items">
-          <div class="nav_link">
-            <a href="#">About</a>
-          </div>
-          <div class="nav_link">
-            <a href="#">Works</a>
-          </div>
-          <div class="nav_link">
-            <a href="#">Contact</a>
-          </div>
+        <a href="#" class="nav_btn">
+          <i class="ph ph-list"></i>
+        </a>
+      </div>
+    </header>
+    <div class="contact_row">
+      <div class="contact_container container">
+        <div class="contact_email">
+          <h4 class="contact_text">E: nghiadt.design@gmail.com</h4>
         </div>
-        <div class="nav_btn">
-          <a href=""><i class="ph ph-list"></i></a>
+        <div class="contact_phone">
+          <h4 class="contact_text">P: (+84) 973 653 534</h4>
         </div>
       </div>
     </div>
-
-    <!-- end nav -->
-
+    <!-- end header -->
     <!-- hero_section -->
     <section class="hero_section">
-      <div class="hero_container container-md">
-        <div class="hero_round"></div>
-        <div class="hero_heading_title">
-          <h1 class="hero_title">Dinh</h1>
-          <h1 class="hero_title">Trong</h1>
-          <h1 class="hero_title">Nghia</h1>
+      <div class="hero_container container">
+        <div class="hero_heading_row">
+          <div class="hero_line"></div>
+          <div class="hero_heading_wrap">
+            <h1 class="hero_heading_text">Dinh Trong Nghia</h1>
+            <h2 class="hero_sub_text">Product Designer</h2>
+            <p class="hero_p_text">A passionate and experienced UI/UX Designer with over 2 years of experience. My focus is on creating intuitive and visually appealing digital experiences that seamlessly blend aesthetics with functionality.</p>
+          </div>
         </div>
-        <div class="hero_heading_subtitle">
-          <h2 class="hero_sub">UI/UX Designer</h2>
+        <div class="hero_nav_row">
+          <div class="hero_nav">
+            <a href="#" class="hero_link">Resume</a>
+            <a href="#" class="hero_link">Works</a>
+            <a href="#" class="hero_link">Contact</a>
+          </div>
         </div>
-        <div class="hero_heading_p">
-          <p class="hero_p">A passionate and experienced UI/UX Designer with over 3 years of experience.
-            My focus is on creating intuitive and visually appealing digital
-              experiences that seamlessly blend aesthetics with functionality.</p>
-        </div>
-    </div>
+      </div>
     </section>
     <!-- end hero_section -->
-
     <!-- about_section -->
 
     <section class="about_section">
-      <div class="about_round"></div>
-      <div class="about_container container-md">
-        <div class="about_content row">
-          <h4 class="about_text">
-            As a proficient web designer, I specialize in creating captivating digital experiences 
-            across e-commerce, management portals, and landing pages. With a focus on blending aesthetics 
-            with functionality, I craft visually engaging designs that drive conversions 
-            and enhance user satisfaction. Whether it's guiding users through seamless purchasing 
-            journeys or streamlining operations with intuitive interfaces, I leverage my expertise 
-            to deliver impactful results.
-          </h4>
-          <a href="#" class="about_btn">
-            See more <i class="ph ph-arrow-right" style="font-size: 32px;"></i>
-          </a>
+      <div class="about_container container">
+        <div class="about_title">
+          <h2 class="about_title_text">About me</h2>
+          <p class="about_text_p">As a proficient web designer, I specialize in creating captivating digital experiences across e-commerce, management portals, and landing pages. With a focus on blending aesthetics with functionality, I craft visually engaging designs that drive conversions and enhance user satisfaction. Whether it's guiding users through seamless purchasing journeys or streamlining operations with intuitive interfaces, I leverage my expertise to deliver impactful results.</p>
         </div>
-        <div class="about_line"></div>
-        <div class="about_skill row">
-          <div class="skill_title col-3">
-            <h3 class="text_42_md">What I Am Great At</h3>
+        <div class="about_skill">
+          <div class="skill_title_row">
+            <h2 class="about_title_text">What I Am Great At</h2>
+            <a href="#" class="cta_btn about_btn">My Resume <i class="ph-duotone ph-arrow-right"></i>
+            </a>
           </div>
-          <div class="skill_col col-9">
-            <div class="about_card">
-              <h3 class="text_24_md">Web Design</h3>
-              <div class="skill_text">
-                <h4 class="text_16_regular">landing Page</h4>
-                <h4 class="text_16_regular">eCommerce</h4>
-                <h4 class="text_16_regular">Web Application</h4>
-                <h4 class="text_16_regular">Corporate Website</h4>
-                <h4 class="text_16_regular">Front End Develop</h4>
+          <div class="skill_card_wrap">
+            <div class="skill_card col" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+              <div class="skill_card_icon">
+                <i class="ph ph-globe"></i>
+              </div>
+              <div class="skill_card_content">
+                <h3 class="skill_card_title">Web Design</h3>
+                <div class="skill_card_content_sub">
+                  <h5 class="skill_card_text">Landing Page</h5>
+                  <h5 class="skill_card_text">E-commerce</h5>
+                  <h5 class="skill_card_text">Web Application</h5>
+                  <h5 class="skill_card_text">Corporate Website</h5>
+                  <h5 class="skill_card_text">Front End Develop</h5>
+                </div>
               </div>
             </div>
-            <div class="skill_line"></div>
-            <div class="about_card">
-              <h3 class="text_24_md">UI/UX Design</h3>
-              <div class="skill_text">
-                <h4 class="text_16_regular">UI Design</h4>
-                <h4 class="text_16_regular">UX Design</h4>
-                <h4 class="text_16_regular">Prototyping & Testing</h4>
-                <h4 class="text_16_regular">User Interface</h4>
-                <h4 class="text_16_regular">Motion design</h4>
+            <div class="skill_card col" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+              <div class="skill_card_icon">
+                <i class="ph ph-selection-all"></i>
+              </div>
+              <div class="skill_card_content">
+                <h3 class="skill_card_title">UI/UX Design</h3>
+                <div class="skill_card_content_sub">
+                  <h5 class="skill_card_text">UI Design</h5>
+                  <h5 class="skill_card_text">UX Design</h5>
+                  <h5 class="skill_card_text">Prototyping & Testing</h5>
+                  <h5 class="skill_card_text">User Interface</h5>
+                  <h5 class="skill_card_text">Motion Design</h5>
+                </div>
               </div>
             </div>
-            <div class="skill_line"></div>
-            <div class="about_card">
-              <h3 class="text_24_md">Graphic Design</h3>
-              <div class="skill_text">
-                <h4 class="text_16_regular">Brand Identity</h4>
-                <h4 class="text_16_regular">Image Editing</h4>
-                <h4 class="text_16_regular">Logo Design</h4>
-                <h4 class="text_16_regular">Motion Graphic</h4>
-                <h4 class="text_16_regular">3D Illustrations</h4>
+            <div class="skill_card col" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+              <div class="skill_card_icon">
+                <i class="ph ph-magic-wand"></i>
+              </div>
+              <div class="skill_card_content">
+                <h3 class="skill_card_title">Graphic Design</h3>
+                <div class="skill_card_content_sub">
+                  <h5 class="skill_card_text">Brand Identity</h5>
+                  <h5 class="skill_card_text">Image Editing</h5>
+                  <h5 class="skill_card_text">Logo Design</h5>
+                  <h5 class="skill_card_text">Motion Graphic</h5>
+                  <h5 class="skill_card_text">3D Illustrations</h5>
+                </div>
               </div>
             </div>
-            <div class="skill_line"></div>
-            <div class="about_card">
-              <h3 class="text_24_md">Front End Develop</h3>
-              <div class="skill_text">
-                <h4 class="text_16_regular">HTML</h4>
-                <h4 class="text_16_regular">CSS</h4>
-                <h4 class="text_16_regular">SASS</h4>
-                <h4 class="text_16_regular">JavaScripts</h4>
-                <h4 class="text_16_regular">VueJS</h4>
+            <div class="skill_card col" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+              <div class="skill_card_icon">
+                <i class="ph ph-code"></i>
+              </div>
+              <div class="skill_card_content">
+                <h3 class="skill_card_title">Front End Develop</h3>
+                <div class="skill_card_content_sub">
+                  <h5 class="skill_card_text">HTML</h5>
+                  <h5 class="skill_card_text">CSS</h5>
+                  <h5 class="skill_card_text">SASS</h5>
+                  <h5 class="skill_card_text">JavaScript</h5>
+                  <h5 class="skill_card_text">VueJS</h5>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    
     <!-- end about_section -->
-    <!-- about_section_mb -->
-    <section class="about_section_mb">
-      <div class="about_section_mb_container container-md">
-        <div class="about_section_mb_title">
-          <h4 class="about_text">
-            As a proficient web designer, I specialize in creating captivating digital experiences 
-            across e-commerce, management portals, and landing pages. With a focus on blending aesthetics 
-            with functionality, I craft visually engaging designs that drive conversions 
-            and enhance user satisfaction. Whether it's guiding users through seamless purchasing 
-            journeys or streamlining operations with intuitive interfaces, I leverage my expertise 
-            to deliver impactful results.
-          </h4>
-        </div>
-        <div class="about_mb_skill">
-          <div class="about_mb_skill_title">
-            <h3 class="text_32_md">What I Am Great At</h3>
-          </div>
-          <div class="about_skill_wrap">
-            <div class="about_card">
-              <h3 class="text_24_md">Web Design</h3>
-              <div class="skill_text">
-                <h4 class="text_16_regular">landing Page</h4>
-                <h4 class="text_16_regular">eCommerce</h4>
-                <h4 class="text_16_regular">Web Application</h4>
-                <h4 class="text_16_regular">Corporate Website</h4>
-                <h4 class="text_16_regular">Front End Develop</h4>
-              </div>
-            </div>
-            <div class="about_card">
-              <h3 class="text_24_md">UI/UX Design</h3>
-              <div class="skill_text">
-                <h4 class="text_16_regular">UI Design</h4>
-                <h4 class="text_16_regular">UX Design</h4>
-                <h4 class="text_16_regular">Prototyping & Testing</h4>
-                <h4 class="text_16_regular">User Interface</h4>
-                <h4 class="text_16_regular">Motion design</h4>
-              </div>
-            </div>
-            <div class="about_card">
-              <h3 class="text_24_md">Graphic Design</h3>
-              <div class="skill_text">
-                <h4 class="text_16_regular">Brand Identity</h4>
-                <h4 class="text_16_regular">Image Editing</h4>
-                <h4 class="text_16_regular">Logo Design</h4>
-                <h4 class="text_16_regular">Motion Graphic</h4>
-                <h4 class="text_16_regular">3D Illustrations</h4>
-              </div>
-            </div>
-            <div class="about_card">
-              <h3 class="text_24_md">Front End Develop</h3>
-              <div class="skill_text">
-                <h4 class="text_16_regular">HTML</h4>
-                <h4 class="text_16_regular">CSS</h4>
-                <h4 class="text_16_regular">SASS</h4>
-                <h4 class="text_16_regular">JavaScripts</h4>
-                <h4 class="text_16_regular">VueJS</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- works_section -->
-
     <section class="works_section">
       <div class="works_container container">
-        <div class="works_title">
-          <h1 class="text_42_md works_title_text">My Masterpiece Collection</h1>
-          <a href="#" class="works_btn">Discover more <i class="ph ph-arrow-right" style="font-size: 32px;"></i> </a>
-        </div>
-        <div class="works_grid row">
-          <a class="works_card col" id="works_1">
-            <div class="works_thumb">
-              <img src="./assets/Group 1.png" class="works_img" alt="">
-            </div>
-            <div class="works_detail">
-              <h2 class="text_24_md">Storecake.io</h2>
-              <p class="text_16_regular">Lorem ipsum dolor sit amet</p>
-            </div>
-          </a>
-          <a class="works_card col" id="works_2">
-            <div class="works_thumb">
-              <img src="./assets/Group 1.png" class="works_img" alt="">
-            </div>
-            <div class="works_detail">
-              <h2 class="text_24_md">Webcake.io</h2>
-              <p class="text_16_regular">Lorem ipsum dolor sit amet</p>
-            </div>
-          </a>
-          <a class="works_card col" id="works_3">
-            <div class="works_thumb">
-              <img src="./assets/Group 1.png" class="works_img" alt="">
-            </div>
-            <div class="works_detail">
-              <h2 class="text_24_md">Tikop</h2>
-              <p class="text_16_regular">Lorem ipsum dolor sit amet</p>
-            </div>
-          </a>
-        </div>
-        <div class="works_grid row">
-          <a class="works_card col" id="works_4">
-            <div class="works_thumb">
-              <img src="./assets/Group 1.png" class="works_img" alt="">
-            </div>
-            <div class="works_detail">
-              <h2 class="text_24_md">GoodCars</h2>
-              <p class="text_16_regular">Lorem ipsum dolor sit amet</p>
-            </div>
-          </a>
-          <a class="works_card col" id="works_5">
-            <div class="works_thumb">
-              <img src="./assets/Group 1.png" class="works_img" alt="">
-            </div>
-            <div class="works_detail">
-              <h2 class="text_24_md">Docbao24h</h2>
-              <p class="text_16_regular">Lorem ipsum dolor sit amet</p>
-            </div>
-          </a>
-          <a class="works_card col" id="works_6">
-            <div class="works_thumb">
-              <img src="./assets/Group 1.png" class="works_img" alt="">
-            </div>
-            <div class="works_detail">
-              <h2 class="text_24_md">Weeboo</h2>
-              <p class="text_16_regular">Lorem ipsum dolor sit amet</p>
-            </div>
-          </a>
-        </div>
-    </section>
-    <!-- end works_section -->
-
-    <!-- contact_section -->
-
-    <section class="contact_section">
-      <div class="contact_container container">
-        <div class="contact_title row">
-          <h1 class="contact_title_text">Let's Make Something Amazing Together</h1>
-        </div>
-        <div class="contact_btn_row"> 
-          <a href="#" class="contact_btn">Start a conversions <i class="ph ph-arrow-right" style="font-size: 32px;"></i></a>
-        </div>
-        <div class="contact_group">
-          <div class="contact_detail">
-            <h4 class="contact_label_text">Email</h4>
-            <h3 class="contact_text">nghiadt.design@gmail.com</h3>
-          </div>
-          <div class="contact_detail">
-            <h4 class="contact_label_text">Phone number</h4>
-            <h3 class="contact_text">(+84) 973 653 534</h3>
-          </div>
-          <div class="contact_detail">
-            <h4 class="contact_label_text">Location</h4>
-            <h3 class="contact_text">Hanoi, Vietnam</h3>
-          </div>
+        <div class="works_title_row">
+          <h2>My Masterpiece Collection</h2>
+          <a href="#" class="cta_btn works_btn">All Works <i class="ph-duotone ph-arrow-right"></i> </a>
         </div>
       </div>
     </section>
 
-    <!-- end contact_section -->
-    <!-- footer -->
-    <footer class="footer">
-      <div class="footer_container container">
-        <div class="footer_line"></div>
-        <div class="footer_row">
-          <div class="copyright">
-            <h4 class="footer_text">© 2024  nghiadt.info</h4>
-          </div>
-          <div class="powered">
-            <h4 class="footer_text">Powered with Bootstrap, Gsap, Firebase</h4>
-          </div>
-        </div>
-    </footer>
-    <!-- end footer -->
+    <!-- end works_section -->
     <!-- custom script -->
     <script src="./js/scripts.js"></script>
+    <!-- tiltjs -->
+    <script src="./js/plugins/vanilla-tilt.min.js"></script>
     <!-- split text -->
-    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+    <script src="https://www.unpkg.com/spltjs@1.1.0"></script>
+    <script src="./js/plugins/anime.js"></script>
     <!-- gsap -->
     <script src="./js/plugins/gsap.min.js"></script>
     <script src="./js/plugins/ScrollTrigger.min.js"></script>
