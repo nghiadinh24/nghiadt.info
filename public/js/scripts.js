@@ -20,6 +20,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
     delay: 0.2,
     duration: 1,
   });
+  // nav
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("main_nav").style.top = "0";
+    } else {
+      document.getElementById("main_nav").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  };
+
+  // preloader
   preloaderTl
     .to(".hero_line, .hero_heading_text, .hero_sub_text", {
       duration: 1,
@@ -84,6 +97,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     end: "80% 30%,",
   });
   // works_section
+
+  // works_cirle
   const worksLeftcir = gsap.to(".works_circle_left", {
     y: -370,
     ease: "power3.out",
@@ -112,6 +127,59 @@ document.addEventListener("DOMContentLoaded", (event) => {
     end: "80% center",
     animation: worksRightcir,
   });
+  // works_title
+
+  const worksTitle = gsap.to(".works_title_text, .works_heading_text_p", {
+    y: 0,
+    opacity: 1,
+    duration: 1,
+    stagger: 0.2,
+    delay: 0.2,
+    ease: "power3.out",
+  });
+
+  ScrollTrigger.create({
+    trigger: ".works_heading",
+    animation: worksTitle,
+    markers: false,
+    start: "10% center",
+    end: "50% center",
+    scrub: true,
+  });
+  const layerObj = gsap.to(".layer_obj", {
+    bottom: "72%",
+    right: "60%",
+    duration: 1,
+    opacity: 1,
+    scale: 0.4,
+    ease: "power3.out",
+  });
+  const codeObj = gsap.to(".code_obj", {
+    bottom: "80%",
+    left: "38%",
+    duration: 1,
+    opacity: 1,
+    scale: 0.6,
+    ease: "power3.out",
+  });
+  ScrollTrigger.create({
+    trigger: ".works_heading",
+    animation: codeObj,
+    markers: true,
+    start: "30% center",
+    end: "70% center",
+    scrub: true,
+    pin: ".works_heading",
+  });
+  ScrollTrigger.create({
+    trigger: ".works_heading",
+    animation: layerObj,
+    markers: false,
+    start: "30% center",
+    end: "70% center",
+    scrub: true,
+  });
+  // end works_title
   // store
   const storecardExpand = gsap.to("#storecake", {
     scale: 1,
