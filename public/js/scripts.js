@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   ScrollTrigger.create({
     trigger: ".works_heading",
     animation: codeObj,
-    markers: true,
+    markers: false,
     start: "30% center",
     end: "70% center",
     scrub: true,
