@@ -425,14 +425,37 @@
     z-index: 1;
 }
 .works_big_card_graphic {
-    height: 60%;
+    height: 60vh;
     width: 100%;
+    position: relative;
     border-radius: 8px;
     opacity: 0.5;
     background: linear-gradient(105deg, rgba(183, 183, 183, 0.2) 1.17%, rgba(65, 65, 65, 0.2) 69.14%);
+    border: 1px solid rgba(255, 255, 255, 0.19);
     transform: scale(0.7);
+    backdrop-filter: blur(16.75px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    gap: 24px;
 }
-
+.big_card_logo {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-width: 20%;
+    opacity: 1;
+}
+.big_card_img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 80%;
+    opacity: 1;
+}
 .works_big_card_content {
     display: flex;
     flex-direction: column;
@@ -519,7 +542,7 @@
     box-shadow: 10px 30px 30px 0px rgba(0, 0, 0, 0.1);
 }
 .works_circle_left {
-    @include works_circle();
+    position: absolute;
     height: 420px;
     width: 420px;
     z-index: 0;
@@ -527,11 +550,14 @@
     top: 520px;
 }
 .works_circle_right {
+    border-radius: 50%;
+    background: linear-gradient(261deg, #37face -26.47%, #5bd6ff 22.55%, #35fcfc 76.7%, #38ffd6 119.14%);
+    filter: blur(2.5999999046325684px);
     position: absolute;
     width: 200px;
     height: 200px;
-    transform: scale(0.7);
-    z-index: 2;
+    transform: scale(2);
+    z-index: 0;
     right: 10%;
     top: 50%;
 }

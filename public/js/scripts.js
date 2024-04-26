@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const worksRightcir = gsap.to(".works_circle_right", {
     y: -670,
     x: -150,
-    scale: 0.5,
+    scale: 2,
     ease: "power3.out",
     duration: 2,
   });
