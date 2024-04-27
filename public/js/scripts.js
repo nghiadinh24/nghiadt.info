@@ -16,23 +16,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
   gsap.ticker.lagSmoothing(0);
 
   console.log("Design and develop with love by Nghia DT");
+
+  // preloader
   const preloaderTl = gsap.timeline({
     delay: 0.2,
     duration: 1,
   });
-  // nav
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("main_nav").style.top = "0";
-    } else {
-      document.getElementById("main_nav").style.top = "-50px";
-    }
-    prevScrollpos = currentScrollPos;
-  };
 
-  // preloader
   preloaderTl
     .to(".hero_line, .hero_heading_text, .hero_sub_text", {
       duration: 1,
@@ -273,6 +263,44 @@ document.addEventListener("DOMContentLoaded", (event) => {
     end: "80% center",
     animation: tikopContent,
     toggleActions: "restart reverse restart reverse",
+  });
+  const otherPiece = gsap.to(".works_title_text_2", {
+    y: 0,
+    opacity: 1,
+    ease: "power3.out",
+    duration: 1,
+    delay: 0.2,
+    stagger: 0.2,
+  });
+  ScrollTrigger.create({
+    trigger: ".more_works",
+    markers: false,
+    start: "top 40%",
+    end: "center center",
+    animation: otherPiece,
+    scrub: true,
+  });
+
+  const worksCard = gsap.to(".works_card, .works_btn", {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    ease: "power3.out",
+    stagger: 0.3,
+    delay: 0.3,
+    duration: 1,
+  });
+  ScrollTrigger.create({
+    trigger: ".more_works",
+    animation: worksCard,
+    scrub: true,
+    markers: true,
+    start: "20% center",
+    end: "center center",
+  });
+  // contact_section
+  const contactSection = gsap.to(".contact_section", {
+    height: "100%",
   });
 });
 
